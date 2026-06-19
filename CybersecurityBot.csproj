@@ -1,0 +1,33 @@
+<!-- Project file using the .NET SDK style for build configuration -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Group containing basic build and assembly properties -->
+  <PropertyGroup>
+    <!-- Output type: WinExe for a Windows GUI application -->
+    <OutputType>WinExe</OutputType>
+    <!-- TargetFramework: framework and platform identifier -->
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <!-- Root namespace used for generated code -->
+    <RootNamespace>CybersecurityBot</RootNamespace>
+    <!-- Assembly name produced by the build -->
+    <AssemblyName>CybersecurityBot</AssemblyName>
+    <!-- Nullable reference types behavior for this project -->
+    <Nullable>enable</Nullable>
+    <!-- Control implicit global usings generation -->
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- Enable WPF support for this project -->
+    <UseWPF>true</UseWPF>
+    <!-- Explicit startup object (entry point) for the application -->
+    <StartupObject>CybersecurityBot.App</StartupObject>
+  </PropertyGroup>
+
+  <!-- Item group for non-code content that should be copied to output -->
+  <ItemGroup>
+    <!-- Include greeting.wav and ensure it's copied when newer -->
+    <None Update="greeting.wav">
+      <!-- Copy the asset to output only when it's newer than the existing file -->
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
