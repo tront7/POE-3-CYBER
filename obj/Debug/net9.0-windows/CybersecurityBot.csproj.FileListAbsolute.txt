@@ -1,0 +1,59 @@
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot_MarkupCompile.cache
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.g.resources
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.sourcelink.json
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.exe
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.deps.json
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\refint\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\Programming-\progh - Copy\obj\Debug\net9.0-windows\ref\CybersecurityBot.dll
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot_MarkupCompile.cache
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.g.resources
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfo.cs
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\refint\CybersecurityBot.dll
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Desktop\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.exe
+C:\Users\PC\Desktop\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.deps.json
+C:\Users\PC\Desktop\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.runtimeconfig.json
+C:\Users\PC\Desktop\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Desktop\progh - Copy\bin\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\CybersecurityBot.genruntimeconfig.cache
+C:\Users\PC\Desktop\progh - Copy\obj\Debug\net9.0-windows\ref\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Cybersecurity\bin\Debug\net9.0-windows\CybersecurityBot.exe
+C:\Users\PC\Documents\GitHub\Cybersecurity\bin\Debug\net9.0-windows\CybersecurityBot.deps.json
+C:\Users\PC\Documents\GitHub\Cybersecurity\bin\Debug\net9.0-windows\CybersecurityBot.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\Cybersecurity\bin\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Cybersecurity\bin\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot_MarkupCompile.cache
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.g.resources
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.sourcelink.json
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\refint\CybersecurityBot.dll
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.pdb
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\CybersecurityBot.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\Cybersecurity\obj\Debug\net9.0-windows\ref\CybersecurityBot.dll

@@ -1,0 +1,4 @@
+C:\Users\PC\Downloads\_CommonRedist\progh\obj\Debug\net6.0\CybersecurityBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Downloads\_CommonRedist\progh\obj\Debug\net6.0\CybersecurityBot.AssemblyInfoInputs.cache
+C:\Users\PC\Downloads\_CommonRedist\progh\obj\Debug\net6.0\CybersecurityBot.AssemblyInfo.cs
+C:\Users\PC\Downloads\_CommonRedist\progh\obj\Debug\net6.0\CybersecurityBot.csproj.CoreCompileInputs.cache
