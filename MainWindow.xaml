@@ -1,0 +1,294 @@
+ <!-- Root window element for the main UI -->
+<Window x:Class="CybersecurityBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="🛡 Cybersecurity Awareness Bot"
+        Height="750" Width="1100"
+        MinHeight="600" MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#0D1117">
+
+    <!-- Resources shared across controls in this window -->
+    <Window.Resources>
+        <!-- Comment: Scrollbar style definition -->
+        <!-- Scrollbar style -->
+        <Style x:Key="DarkScrollBar" TargetType="ScrollBar">
+            <!-- Background color for the scrollbar track -->
+            <Setter Property="Background" Value="#161B22"/>
+            <!-- Thickness/width of the scrollbar -->
+            <Setter Property="Width" Value="8"/>
+        </Style>
+
+        <!-- Comment: Input textbox styling -->
+        <!-- Input textbox style -->
+        <Style x:Key="InputStyle" TargetType="TextBox">
+            <!-- TextBox background color -->
+            <Setter Property="Background"   Value="#161B22"/>
+            <!-- Text color inside the TextBox -->
+            <Setter Property="Foreground"   Value="#E6EDF3"/>
+            <!-- Border brush color for the TextBox -->
+            <Setter Property="BorderBrush"  Value="#30363D"/>
+            <!-- Thickness of the border -->
+            <Setter Property="BorderThickness" Value="1"/>
+            <!-- Font family used in the input -->
+            <Setter Property="FontFamily"   Value="Consolas"/>
+            <!-- Font size for input text -->
+            <Setter Property="FontSize"     Value="14"/>
+            <!-- Padding inside the TextBox -->
+            <Setter Property="Padding"      Value="10,8"/>
+            <!-- Caret (text cursor) color -->
+            <Setter Property="CaretBrush"   Value="#58A6FF"/>
+        </Style>
+
+        <!-- Comment: Send button base styling -->
+        <!-- Send button style -->
+        <Style x:Key="SendButton" TargetType="Button">
+            <!-- Default background color for the button -->
+            <Setter Property="Background"  Value="#238636"/>
+            <!-- Text color for the button -->
+            <Setter Property="Foreground"  Value="White"/>
+            <!-- Font family used for button text -->
+            <Setter Property="FontFamily"  Value="Segoe UI"/>
+            <!-- Font size for button text -->
+            <Setter Property="FontSize"    Value="14"/>
+            <!-- Font weight for emphasis -->
+            <Setter Property="FontWeight"  Value="SemiBold"/>
+            <!-- Remove button border -->
+            <Setter Property="BorderThickness" Value="0"/>
+            <!-- Cursor shown when hovering the button -->
+            <Setter Property="Cursor"      Value="Hand"/>
+            <!-- Internal padding for the button -->
+            <Setter Property="Padding"     Value="18,8"/>
+            <!-- Triggers for mouse interactions -->
+            <Style.Triggers>
+                <!-- Hover state -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2EA043"/>
+                </Trigger>
+                <!-- Pressed state -->
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#1A7F37"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Comment: Small topic chip style used for suggested topics -->
+        <!-- Topic chip button -->
+        <Style x:Key="TopicChip" TargetType="Button">
+            <!-- Background for the chip -->
+            <Setter Property="Background"     Value="#161B22"/>
+            <!-- Foreground (text) color for chip -->
+            <Setter Property="Foreground"     Value="#58A6FF"/>
+            <!-- Border color for the chip -->
+            <Setter Property="BorderBrush"    Value="#30363D"/>
+            <!-- Border thickness for the chip -->
+            <Setter Property="BorderThickness" Value="1"/>
+            <!-- Font family for chip text -->
+            <Setter Property="FontFamily"     Value="Segoe UI"/>
+            <!-- Font size for chip text -->
+            <Setter Property="FontSize"       Value="11"/>
+            <!-- Internal padding for the chip -->
+            <Setter Property="Padding"        Value="8,4"/>
+            <!-- External margin around each chip -->
+            <Setter Property="Margin"         Value="2"/>
+            <!-- Cursor when hovering the chip -->
+            <Setter Property="Cursor"         Value="Hand"/>
+            <Style.Triggers>
+                <!-- Hover styling for chips -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background"  Value="#1F2937"/>
+                    <Setter Property="BorderBrush" Value="#58A6FF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <!-- Main layout grid dividing left and right panes -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!-- Fixed width left column for navigation/info -->
+            <ColumnDefinition Width="260"/>
+            <!-- Flexible right column for main content -->
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left panel containing logo, topics and activity log -->
+        <!-- ── LEFT PANEL ─────────────────────────────────────────── -->
+        <Border Grid.Column="0" Background="#0D1117"
+                BorderBrush="#30363D" BorderThickness="0,0,1,0">
+            <DockPanel>
+
+                <!-- Top logo/header area -->
+                <!-- Logo panel -->
+                <Border DockPanel.Dock="Top" Background="#161B22"
+                        BorderBrush="#30363D" BorderThickness="0,0,0,1"
+                        Padding="12,14">
+                    <StackPanel>
+                        <!-- App title in the left pane -->
+                        <TextBlock Text="🛡 CyberBot" Foreground="#58A6FF"
+                                   FontFamily="Consolas" FontSize="18"
+                                   FontWeight="Bold" TextAlignment="Center"/>
+                        <!-- Subtitle for the app -->
+                        <TextBlock Text="Cybersecurity Awareness Assistant"
+                                   Foreground="#8B949E" FontSize="10"
+                                   FontFamily="Segoe UI" TextAlignment="Center"
+                                   Margin="0,3,0,0" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Small ASCII art area reserved below the header -->
+                <!-- ASCII Art -->
+                <Border DockPanel.Dock="Top" Padding="4,10"
+                        BorderBrush="#30363D" BorderThickness="0,0,0,1">
+                    <ScrollViewer Height="130"
+                                  HorizontalScrollBarVisibility="Hidden"
+                                  VerticalScrollBarVisibility="Hidden">
+                        <!-- TextBlock to receive ASCII art at runtime -->
+                        <TextBlock x:Name="AsciiArt"
+                                   FontFamily="Consolas" FontSize="7"
+                                   Foreground="#238636"
+                                   TextWrapping="NoWrap"
+                                   LineHeight="10"
+                                   HorizontalAlignment="Center"
+                                   xml:space="preserve"/>
+                    </ScrollViewer>
+                </Border>
+
+                <!-- Header label above the topics list -->
+                <!-- Topics header -->
+                <TextBlock DockPanel.Dock="Top"
+                           Text="  📋 TOPICS" Foreground="#8B949E"
+                           FontFamily="Segoe UI" FontSize="11"
+                           FontWeight="SemiBold" Margin="0,10,0,4"/>
+
+                <!-- Scrollable list of topic chips -->
+                <!-- Topics list -->
+                <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto"
+                              MaxHeight="220">
+                    <WrapPanel x:Name="TopicsPanel" Margin="8,0,8,8"/>
+                </ScrollViewer>
+
+                <!-- Header for the activity log section -->
+                <!-- Activity log header -->
+                <TextBlock DockPanel.Dock="Top"
+                           Text="  📜 ACTIVITY LOG" Foreground="#8B949E"
+                           FontFamily="Segoe UI" FontSize="11"
+                           FontWeight="SemiBold" Margin="0,8,0,4"/>
+
+                <!-- Small footer with exit hint -->
+                <!-- Exit hint -->
+                <Border DockPanel.Dock="Bottom" Background="#0D1117" Padding="8,8"
+                        BorderBrush="#30363D" BorderThickness="0,1,0,0">
+                    <TextBlock Text="⌨ Type 'exit', 'quit', or 'bye' to close"
+                               Foreground="#8B949E" FontFamily="Consolas"
+                               FontSize="9" HorizontalAlignment="Center"/>
+                </Border>
+
+                <!-- Activity log display area -->
+                <!-- Activity log -->
+                <Border DockPanel.Dock="Bottom" Margin="8,0,8,8">
+                    <ScrollViewer x:Name="LogScroller"
+                                  VerticalScrollBarVisibility="Auto"
+                                  Height="140">
+                        <TextBlock x:Name="ActivityLog"
+                                   FontFamily="Consolas" FontSize="9"
+                                   Foreground="#8B949E" TextWrapping="Wrap"
+                                   LineHeight="14"/>
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+        </Border>
+        <!-- Right side: main chat and controls -->
+        <!-- ── RIGHT PANEL ────────────────────────────────────────── -->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <!-- Top bar row -->
+                <RowDefinition Height="Auto"/>
+                <!-- Chat messages row (expands) -->
+                <RowDefinition Height="*"/>
+                <!-- Sentiment/info row -->
+                <RowDefinition Height="Auto"/>
+                <!-- Input row -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top status bar -->
+            <!-- Top bar -->
+            <Border Grid.Row="0" Background="#161B22"
+                    BorderBrush="#30363D" BorderThickness="0,0,0,1"
+                    Padding="16,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Orientation="Horizontal"
+                                VerticalAlignment="Center">
+                        <!-- Small status indicator circle -->
+                        <Ellipse Width="10" Height="10" Fill="#238636" Margin="0,0,8,0"/>
+                        <!-- Status text (online/ready) -->
+                        <TextBlock x:Name="StatusLabel"
+                                   Text="Online — Ready to help"
+                                   Foreground="#8B949E" FontFamily="Segoe UI"
+                                   FontSize="12" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <!-- Session label on the right of the top bar -->
+                    <TextBlock Grid.Column="1" x:Name="SessionLabel"
+                               Foreground="#8B949E" FontFamily="Consolas"
+                               FontSize="11" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- Main chat messages area -->
+            <!-- Chat area -->
+            <ScrollViewer Grid.Row="1" x:Name="ChatScroller"
+                          VerticalScrollBarVisibility="Auto"
+                          Padding="16,12">
+                <StackPanel x:Name="ChatPanel"/>
+            </ScrollViewer>
+
+            <!-- Collapsible sentiment/info bar (hidden by default) -->
+            <!-- Sentiment bar -->
+            <Border Grid.Row="2" x:Name="SentimentBar"
+                    Background="#161B22" Padding="16,6"
+                    BorderBrush="#30363D" BorderThickness="0,1,0,0"
+                    Visibility="Collapsed">
+                <TextBlock x:Name="SentimentLabel"
+                           FontFamily="Segoe UI" FontSize="11"
+                           Foreground="#F0883E"/>
+            </Border>
+
+            <!-- Input controls at the bottom: textbox and buttons -->
+            <!-- Input area -->
+            <Border Grid.Row="3" Background="#161B22"
+                    BorderBrush="#30363D" BorderThickness="0,1,0,0"
+                    Padding="16,12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- User input textbox -->
+                    <TextBox Grid.Column="0" x:Name="InputBox"
+                             Style="{StaticResource InputStyle}"
+                             KeyDown="InputBox_KeyDown"
+                             VerticalContentAlignment="Center"
+                             Height="40"
+                             ToolTip="Type your question and press Enter or click Send"/>
+                    <!-- Send button -->
+                    <Button Grid.Column="1" Content="Send 📤"
+                            Style="{StaticResource SendButton}"
+                            Click="SendButton_Click"
+                            Margin="8,0,0,0" Height="40"/>
+                    <!-- Clear input button -->
+                    <Button Grid.Column="2" Content="Clear 🗑"
+                            Style="{StaticResource SendButton}"
+                            Background="#21262D"
+                            Click="ClearButton_Click"
+                            Margin="6,0,0,0" Height="40"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
