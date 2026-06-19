@@ -144,25 +144,25 @@ Displays the last 10 actions across four categories: **Task**, **Quiz**, **NLP**
 
 ```
 User:    "Clinton"
-Liam:    "Good morning, Clinton! 👋 Great to meet you."
+Liam:    "Good morning, Clinton!  Great to meet you."
 
 User:    "add task - Enable 2FA on all accounts"
-Liam:    "📋 Task added! [1] Enable 2FA on all accounts
+Liam:    " Task added! [1] Enable 2FA on all accounts
           Would you like to set a reminder?"
 
 User:    "in 3 days"
-Liam:    "🔔 Got it! I'll remind you on 22 Jun 2026."
+Liam:    " Got it! I'll remind you on 22 Jun 2026."
 
 User:    "start quiz"
-Liam:    "🧩 CYBERSECURITY QUIZ STARTED! Q1: What should
+Liam:    " CYBERSECURITY QUIZ STARTED! Q1: What should
           you do if you receive an email asking for your
           password? A) Reply  B) Delete  C) Report  D) Ignore"
 
 User:    "C"
-Liam:    "✅ Correct! Reporting phishing emails helps protect others."
+Liam:    " Correct! Reporting phishing emails helps protect others."
 
 User:    "show activity log"
-Liam:    "📋 Here are the last 3 actions:
+Liam:    " Here are the last 3 actions:
           1. [09:14] Quiz: Quiz started
           2. [09:13] Task: Task added: 'Enable 2FA on all accounts'
           3. [09:13] Chat: Session started for Clinton"
@@ -174,12 +174,12 @@ Liam:    "📋 Here are the last 3 actions:
 
 | Topic | Topic | Topic |
 |-------|-------|-------|
-| 🔐 Passwords | 🎣 Phishing | 🌐 Safe Browsing |
-| 🦠 Malware | 🔏 Privacy | 🎭 Social Engineering |
-| 🔑 2FA / MFA | 🔒 VPN | 💰 Ransomware |
-| 📡 Wi‑Fi Security | 🔓 Encryption | 🚨 Data Breach |
-| 🔴 Hacking | 🔄 Software Updates | 🛡 Firewalls |
-| 🪪 Identity Theft | 📧 Spam | 🎣 Scams |
+|  Passwords |  Phishing |  Safe Browsing |
+|  Malware |  Privacy |  Social Engineering |
+|  2FA / MFA |  VPN |  Ransomware |
+|  Wi‑Fi Security |  Encryption |  Data Breach |
+|  Hacking |  Software Updates |  Firewalls |
+|  Identity Theft |  Spam |  Scams |
 
 Each topic has multiple randomised responses for variety.
 
