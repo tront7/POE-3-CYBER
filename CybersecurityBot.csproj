@@ -21,6 +21,12 @@
     <StartupObject>CybersecurityBot.App</StartupObject>
   </PropertyGroup>
 
+  <!-- NuGet package dependencies -->
+  <ItemGroup>
+    <!-- SQLite provider — gives us SqliteConnection for local database storage -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+  </ItemGroup>
+
   <!-- Item group for non-code content that should be copied to output -->
   <ItemGroup>
     <!-- Include greeting.wav and ensure it's copied when newer -->

@@ -421,7 +421,7 @@ namespace CybersecurityBot
             DateTime? date = NlpParser.ParseReminderDate(raw);
             if (date.HasValue)
             {
-                _pendingReminderTask!.ReminderAt = date;
+                _tasks.SetReminder(_pendingReminderTask!.Id, date.Value); // persist to SQLite
                 _actLog.LogTask($"Reminder set for '{_pendingReminderTask.Title}' on {date.Value:dd MMM yyyy}");
                 _context.Log($"Reminder set: {_pendingReminderTask.Title}");
                 AddBotMessage($"🔔 Got it! I'll remind you about '{_pendingReminderTask.Title}' on {date.Value:dd MMM yyyy}.");
@@ -549,7 +549,7 @@ namespace CybersecurityBot
             DateTime? date = NlpParser.ParseReminderDate(reminderRaw);
             if (date.HasValue)
             {
-                task.ReminderAt = date;
+                _tasks.SetReminder(id, date.Value); // persist to SQLite
                 AddTaskMessage($"🔔 Reminder set for '{task.Title}' on {date.Value:dd MMM yyyy}.");
                 _actLog.LogTask($"Reminder updated for task [{id}]: {date.Value:dd MMM yyyy}");
             }
@@ -774,6 +774,7 @@ namespace CybersecurityBot
             _context.Log($"Session ended{name}");
 
             await System.Threading.Tasks.Task.Delay(3_000);
+            _tasks.Dispose(); // close SQLite connection cleanly
             Application.Current.Shutdown();
         }
 
